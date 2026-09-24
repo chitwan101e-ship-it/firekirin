@@ -4,7 +4,6 @@ export function signupMarkup() {
       <div class="field-grid">
         <input name="first" required placeholder="First Name" aria-label="First Name" autocomplete="given-name">
         <input name="last" required placeholder="Last Name" aria-label="Last Name" autocomplete="family-name">
-        <input name="phone" required placeholder="Phone" aria-label="Phone" autocomplete="tel" inputmode="tel">
         <input name="email" type="email" required placeholder="Email" aria-label="Email" autocomplete="email">
       </div>
       <label class="file-field">

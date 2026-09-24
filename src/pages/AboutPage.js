@@ -13,7 +13,7 @@ export const AboutPage = {
         <div class="pillars">
           <article class="pillar glass-card"><h3>Variety of games</h3><p>Fast fish tables, themed slots, and keno when you want a board instead of a cannon.</p></article>
           <article class="pillar glass-card"><h3>Play anywhere</h3><p>Start online. Keep the same account if you move to the Android or iOS app.</p></article>
-          <article class="pillar glass-card"><h3>A clear desk</h3><p>Navigation stays short, support has a phone number, and vendors have their own request form.</p></article>
+          <article class="pillar glass-card"><h3>A clear desk</h3><p>Navigation stays short, and vendors have their own request form.</p></article>
         </div>
         <img src="${siteData.assets.lobby}" alt="Fire Kirin fish and slot games" style="width:100%;height:360px;object-fit:cover;border-radius:24px;margin:22px 0">
         <div class="glass-card" style="padding:28px">

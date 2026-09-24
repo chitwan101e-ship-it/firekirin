@@ -1,6 +1,5 @@
 import siteData from '../data/site.json';
 import { gameCard, bindReveal } from '../components/gameCard.js';
-import { signupMarkup, bindSignup } from '../components/signupForm.js';
 
 let stopReveal = () => {};
 let carouselTimer = 0;
@@ -19,28 +18,12 @@ export const HomePage = {
           <h1 class="hero-title"><span>Fire Kirin</span><span>Online Sweepstakes</span></h1>
           <p class="lede">A lobby built for fish tables, slots, and keno. Same account in the browser or on your phone, with the creature holding the floor.</p>
           <div class="hero-actions">
-            <a class="btn btn-gold" href="#signup">Get Free Fire Kirin Account</a>
+            <a class="btn btn-gold" href="/account" data-route="/account">Join Now</a>
             <a class="btn btn-ghost" href="/games" data-route="/games">Play FK</a>
           </div>
           <p class="status-chip"><span class="pulse"></span> Fish tables, slots, and keno in one lobby</p>
         </div>
         <div class="hero-stage" aria-hidden="true"></div>
-      </section>
-
-      <section class="band" id="signup">
-        <div class="wrap split">
-          <div class="reveal">
-            <p class="eyebrow">Need a Fire Kirin account?</p>
-            <h2 class="section-title">It's easy. Sign up and get a free account.</h2>
-            <p class="section-copy" style="text-align:left;margin-left:0">Tell us who you are and we'll point you at the lobby. This page is a visual demo, so the form never leaves your browser.</p>
-            <ul class="feature-list">
-              <li><strong>Variety of games.</strong> Fish tables, slots, and keno, from quick rounds to longer bonus runs.</li>
-              <li><strong>Play anywhere.</strong> Open the lobby on a computer, or keep the same account on Android and iOS.</li>
-              <li><strong>Built to be obvious.</strong> Clear navigation, a phone number on every page, and a vendor desk if you run tables.</li>
-            </ul>
-          </div>
-          <div class="signup-card reveal">${signupMarkup()}</div>
-        </div>
       </section>
 
       <section class="band">
@@ -130,7 +113,6 @@ export const HomePage = {
       </section>
     `;
 
-    bindSignup(container);
     stopReveal = bindReveal(container);
 
     const scroller = container.querySelector('.hot-row');

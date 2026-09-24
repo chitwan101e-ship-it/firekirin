@@ -216,10 +216,11 @@ body:not(.is-home) .site-header {
 
 .menu-sub a:hover { background: rgba(57, 255, 74, 0.08); }
 
-.header-phone {
-  color: var(--gold);
-  font-weight: 700;
-  letter-spacing: 0.04em;
+.header-join {
+  flex: 0 0 auto;
+  min-height: 36px;
+  padding: 0 14px;
+  font-size: 12px;
   white-space: nowrap;
 }
 
@@ -823,7 +824,7 @@ body:not(.is-home) .site-header {
 
 @media (max-width: 1100px) {
   .nav-toggle { display: grid; place-items: center; }
-  .header-phone { display: none; }
+  .header-join { min-height: 34px; padding: 0 10px; font-size: 11px; }
   .nav-links {
     display: none;
     position: absolute;

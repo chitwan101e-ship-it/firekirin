@@ -13,7 +13,6 @@ export const VendorPage = {
             <input required placeholder="Business name" aria-label="Business name">
             <input required placeholder="Your name" aria-label="Your name" autocomplete="name">
             <input required type="email" placeholder="Email" aria-label="Email" autocomplete="email">
-            <input required placeholder="Phone" aria-label="Phone" autocomplete="tel">
             <textarea required rows="5" placeholder="Where you operate and what you need" aria-label="Message"></textarea>
             <button class="btn btn-gold" type="submit">Request a vendor account</button>
             <p class="form-note" data-done hidden>Demo only. This request stayed in the browser.</p>

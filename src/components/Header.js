@@ -26,7 +26,7 @@ export const Header = {
         <nav class="nav-links" id="site-nav">
           ${siteData.navigation.map(itemMarkup).join('')}
         </nav>
-        <a class="header-phone" href="${siteData.phoneHref}">${siteData.phone}</a>
+        <a class="btn btn-gold header-join" href="/account" data-route="/account">Join Now</a>
         <button class="nav-toggle" type="button" aria-label="Menu Toggle" aria-expanded="false" aria-controls="site-nav">
           <span></span>
         </button>

@@ -1,5 +1,3 @@
-import siteData from '../data/site.json';
-
 export const ContactPage = {
   render(container) {
     container.className = 'site-main';
@@ -12,9 +10,9 @@ export const ContactPage = {
         </div>
         <div class="split">
           <div class="glass-card" style="padding:28px">
-            <p class="kicker">Phone</p>
-            <h2 class="section-title" style="text-align:left"><a href="${siteData.phoneHref}">${siteData.phone}</a></h2>
-            <p class="section-copy" style="text-align:left;margin-left:0">Call for lobby help. If you want to run tables rather than play them, use the vendor request.</p>
+            <p class="kicker">Desk</p>
+            <h2 class="section-title" style="text-align:left">Send a note</h2>
+            <p class="section-copy" style="text-align:left;margin-left:0">Questions about a table or the lobby can go through the form. If you want to run tables rather than play them, use the vendor request.</p>
             <a class="btn btn-ghost" href="/vendor" data-route="/vendor">Become a vendor</a>
           </div>
           <form class="glass-card plain-form" style="padding:28px" data-contact>

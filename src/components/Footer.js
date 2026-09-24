@@ -11,7 +11,6 @@ export const Footer = {
         <div>
           <h3>Fire Kirin</h3>
           <p>Fish tables, slots, and keno in one sweepstakes lobby. Play in the browser, or take the same account to your phone.</p>
-          <p><a href="${siteData.phoneHref}">${siteData.phone}</a></p>
           <div class="tag-row">
             <a href="/games" data-route="/games">Fire Kirin Online</a>
             <a href="/fish-games" data-route="/fish-games">Fish Games</a>

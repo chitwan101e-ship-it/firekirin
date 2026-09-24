@@ -36,8 +36,8 @@ const PAGES = {
     image: siteData.assets.fishBanner,
   },
   '/contact': {
-    title: 'Contact Fire Kirin | (844) 660-7600',
-    description: 'Contact Fire Kirin at (844) 660-7600 for lobby help, or open the vendor desk if you run fish tables or slot cabinets.',
+    title: 'Contact Fire Kirin',
+    description: 'Contact Fire Kirin for lobby help, or open the vendor desk if you run fish tables or slot cabinets.',
     image: siteData.assets.lobby,
   },
   '/account': {
@@ -65,7 +65,6 @@ function organization() {
     name: 'Fire Kirin',
     url: `${SITE_URL}/`,
     logo: absolute(siteData.assets.logo),
-    telephone: '+1-844-660-7600',
   };
 }
 

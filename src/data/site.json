@@ -1,7 +1,5 @@
 {
   "siteName": "Fire Kirin",
-  "phone": "(844) 660-7600",
-  "phoneHref": "tel:+18446607600",
   "assets": {
     "logo": "/firekirin.com/wp-content/uploads/2023/12/Fire-Kirin-PNG-Logo-transparent.png",
     "favicon": "/firekirin.com/wp-content/uploads/2025/06/cropped-Fire-Kirin-PNG-Logo-transparent-1-32x32.png",
@@ -24,7 +22,7 @@
     { "src": "/firekirin.com/wp-content/uploads/2024/06/firekirin-download-for-IOS.jpg", "alt": "Download the Fire Kirin app for iOS" }
   ],
   "navigation": [
-    { "label": "Create Free Account", "path": "/account", "accent": true },
+    { "label": "Back to Home Page", "path": "/", "accent": true },
     { "label": "About", "path": "/about" },
     { "label": "Game List", "path": "/games" },
     {
