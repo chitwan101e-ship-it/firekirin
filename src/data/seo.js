@@ -1,8 +1,8 @@
 import siteData from './site.json';
 
-export const SITE_URL = 'https://firekirin.com';
+export const SITE_URL = 'https://firekirin.games';
 
-const HOME_DESCRIPTION = 'Play Fire Kirin fish games and slots online. Ocean Monster, Arc of Templar, Baby Octopus, Buffalo 777, and more in one sweepstakes lobby.';
+const HOME_DESCRIPTION = 'Play Fire Kirin games online. Fish tables and slots, including Ocean Monster, Arc of Templar, Baby Octopus, and Buffalo 777, in one sweepstakes lobby.';
 
 const PAGES = {
   '/': {
@@ -31,8 +31,8 @@ const PAGES = {
     image: siteData.assets.slotBanner,
   },
   '/blog': {
-    title: 'Fire Kirin Blog | Fish Tables and Slots',
-    description: 'Short notes on Fire Kirin fish tables, slot cabinets, and playing the lobby from a browser or a phone.',
+    title: 'Fire Kirin Blog: Games, Download, and XYZ Guides',
+    description: 'Fire Kirin game guides for 2026: how to play, what Fire Kirin XYZ means, browser play on a Chromebook, and the Android and iPhone download path.',
     image: siteData.assets.fishBanner,
   },
   '/contact': {

@@ -1,8 +1,9 @@
 import siteData from '../data/site.json';
+import { getPost, posts, postSnapshotHtml } from '../data/posts.js';
 
-export const SITE_URL = 'https://firekirin.com';
+export const SITE_URL = 'https://firekirin.games';
 
-const HOME_DESCRIPTION = 'Play Fire Kirin fish games and slots online. Ocean Monster, Arc of Templar, Baby Octopus, Buffalo 777, and more in one sweepstakes lobby.';
+const HOME_DESCRIPTION = 'Play Fire Kirin games online. Fish tables and slots, including Ocean Monster, Arc of Templar, Baby Octopus, and Buffalo 777, in one sweepstakes lobby.';
 
 const pages = {
   '/': {
@@ -31,8 +32,8 @@ const pages = {
     image: siteData.assets.slotBanner,
   },
   '/blog': {
-    title: 'Fire Kirin Blog: Fish Tables and Slots',
-    description: 'Short notes on Fire Kirin fish tables, slot cabinets, and playing the lobby from a browser or a phone.',
+    title: 'Fire Kirin Blog: Games, Download, and XYZ Guides',
+    description: 'Fire Kirin game guides for 2026: how to play, what Fire Kirin XYZ means, browser play on a Chromebook, and the Android and iPhone download path.',
     image: siteData.assets.fishBanner,
   },
   '/contact': {
@@ -112,9 +113,58 @@ export function canonicalPath(pathname) {
   return pathname || '/';
 }
 
+function articleSeo(post) {
+  const path = `/blog/${post.slug}`;
+  return {
+    title: `${post.title} | Fire Kirin`,
+    description: post.description,
+    path,
+    image: absolute(post.image),
+    robots: 'index, follow, max-image-preview:large',
+    ogType: 'article',
+    jsonLd: {
+      '@context': 'https://schema.org',
+      '@graph': [
+        organization(),
+        website(),
+        {
+          '@type': 'BlogPosting',
+          headline: post.title,
+          description: post.description,
+          datePublished: post.date,
+          dateModified: post.date,
+          image: absolute(post.image),
+          url: `${SITE_URL}${path}`,
+          mainEntityOfPage: `${SITE_URL}${path}`,
+          author: { '@id': `${SITE_URL}/#organization` },
+          publisher: { '@id': `${SITE_URL}/#organization` },
+        },
+        {
+          '@type': 'FAQPage',
+          mainEntity: post.faqs.map((faq) => ({
+            '@type': 'Question',
+            name: faq.q,
+            acceptedAnswer: { '@type': 'Answer', text: faq.a },
+          })),
+        },
+        breadcrumb([
+          { name: 'Home', path: '/' },
+          { name: 'Blog', path: '/blog' },
+          { name: post.title, path },
+        ]),
+      ],
+    },
+  };
+}
+
 export function pageSeo(pathname) {
   const path = canonicalPath(pathname);
   const parts = path.split('/').filter(Boolean);
+  const post = parts[0] === 'blog' && parts.length === 2 ? getPost(parts[1]) : null;
+  if (parts[0] === 'blog' && parts.length === 2) {
+    return post ? articleSeo(post) : missingSeo();
+  }
+
   const game = parts.length === 2 ? siteData.games.find((item) => item.id === parts[1]) : null;
 
   if (parts.length === 2 && !game) {
@@ -200,10 +250,19 @@ export function indexablePages() {
   const gamePaths = siteData.games.map((game) => (
     game.category === 'slot' ? `/slots/${game.id}` : `/fish-games/${game.id}`
   ));
-  return [...staticPaths, ...gamePaths].map((path) => pageSeo(path));
+  const postPaths = posts.map((post) => `/blog/${post.slug}`);
+  return [...staticPaths, ...gamePaths, ...postPaths].map((path) => pageSeo(path));
 }
 
 export function snapshotHtml(seo) {
+  if (seo.path === '/blog') {
+    const items = posts.map((post) => `<li><a href="/blog/${post.slug}">${escapeHtml(post.title)}</a></li>`).join('');
+    return `<article><h1>Fire Kirin game guides</h1><p>${escapeHtml(seo.description)}</p><ul>${items}</ul></article>`;
+  }
+  if (seo.path.startsWith('/blog/')) {
+    const post = getPost(seo.path.slice('/blog/'.length));
+    if (post) return postSnapshotHtml(post);
+  }
   const games = seo.path === '/slots'
     ? siteData.games.filter((game) => game.category === 'slot')
     : seo.path === '/fish-games'

@@ -8,6 +8,7 @@ import { GameListPage } from '../pages/GameListPage.js';
 import { FishGamesPage } from '../pages/FishGamesPage.js';
 import { SlotsPage } from '../pages/SlotsPage.js';
 import { BlogPage } from '../pages/BlogPage.js';
+import { BlogPostPage } from '../pages/BlogPostPage.js';
 import { ContactPage } from '../pages/ContactPage.js';
 import { AccountPage } from '../pages/AccountPage.js';
 import { VendorPage } from '../pages/VendorPage.js';
@@ -73,7 +74,10 @@ export const router = {
     setSceneMode(home ? 'hero' : 'ambient');
     Header.setActive(path);
 
-    if (parts.length === 2 && ['fish-games', 'slots', 'games'].includes(parts[0])) {
+    if (parts[0] === 'blog' && parts.length === 2) {
+      activePage = BlogPostPage;
+      BlogPostPage.render(container, parts[1]);
+    } else if (parts.length === 2 && ['fish-games', 'slots', 'games'].includes(parts[0])) {
       activePage = GameDetailPage;
       GameDetailPage.render(container, parts[1]);
     } else if (routes[path]) {

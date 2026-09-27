@@ -29,7 +29,7 @@ export function applyHead(seo) {
   const url = seo.path === '/' || seo.path === '/404' ? `${SITE_URL}/` : `${SITE_URL}${seo.path}`;
   upsertMeta('property', 'og:url', url);
   upsertMeta('property', 'og:image', seo.image);
-  upsertMeta('property', 'og:type', 'website');
+  upsertMeta('property', 'og:type', seo.ogType || 'website');
   upsertMeta('property', 'og:site_name', 'Fire Kirin');
   upsertMeta('name', 'twitter:card', 'summary_large_image');
   upsertMeta('name', 'twitter:title', seo.title);

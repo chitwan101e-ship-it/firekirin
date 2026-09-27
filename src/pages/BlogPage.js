@@ -1,20 +1,4 @@
-const posts = [
-  {
-    title: 'How to read a fish table',
-    image: '/firekirin.com/wp-content/uploads/2024/06/Play-Fire-Kirin-Fish-Games.jpg',
-    body: 'Watch the boss before you spend the whole cannon. Tables like Ocean Monster and Crab King 2 telegraph the big targets. Smaller fish keep the round moving while you wait.',
-  },
-  {
-    title: 'Slots when the reef gets loud',
-    image: '/firekirin.com/wp-content/uploads/2024/06/Play-Fire-Kirin-Slots.jpg',
-    body: 'Buffalo 777 and 4th of July are the palate cleansers: fixed reels, readable symbols, and a bonus you can see coming. Use them between fish sessions.',
-  },
-  {
-    title: 'Browser first, phone second',
-    image: '/firekirin.com/wp-content/uploads/2024/06/fire-krin-app-download.jpg',
-    body: 'The online lobby is the fastest way to learn the floor. Once the account exists, the same profile is what the Android and iOS builds expect.',
-  },
-];
+import { posts } from '../data/posts.js';
 
 export const BlogPage = {
   render(container) {
@@ -22,18 +6,18 @@ export const BlogPage = {
     container.innerHTML = `
       <div class="page">
         <div class="page-head">
-          <p class="eyebrow">Blog</p>
-          <h1>Notes from the lobby</h1>
-          <p class="lede">Short reads on fish tables, slots, and playing from home. No fake strategy that promises a result.</p>
+          <p class="eyebrow">Fire Kirin blog</p>
+          <h1>Fire Kirin game guides</h1>
+          <p class="lede">How to play Fire Kirin games, what Fire Kirin XYZ means, and how to open the lobby in a browser on Android, iPhone, or a Chromebook.</p>
         </div>
         <div class="post-grid">
           ${posts.map((post) => `
-            <article class="post-card">
-              <img src="${post.image}" alt="">
-              <p class="kicker">Floor notes</p>
-              <h3>${post.title}</h3>
-              <p>${post.body}</p>
-            </article>`).join('')}
+            <a class="post-card" href="/blog/${post.slug}" data-route="/blog/${post.slug}">
+              <img src="${post.image}" alt="${post.imageAlt}">
+              <p class="kicker">${post.kicker}</p>
+              <h2>${post.title}</h2>
+              <p>${post.excerpt}</p>
+            </a>`).join('')}
         </div>
       </div>`;
   },
