@@ -1,5 +1,6 @@
 import { Header } from './components/Header.js';
 import { Footer } from './components/Footer.js';
+import { ConnectCard } from './components/ConnectCard.js';
 import { mountScene } from './scene/loadScene.js';
 import { router } from './utils/router.js';
 
@@ -31,6 +32,11 @@ export const App = {
     Footer.render(footer);
 
     container.appendChild(shell);
+
+    const connect = document.createElement('aside');
+    container.appendChild(connect);
+    ConnectCard.render(connect);
+
     router.renderPage(main);
     window.addEventListener('popstate', () => router.renderPage(main));
   },

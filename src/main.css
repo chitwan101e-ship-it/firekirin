@@ -949,3 +949,133 @@ body:not(.is-home) .site-header {
 }
 
 .hero, .page { animation: risein 0.7s ease both; }
+
+.connect-card {
+  position: fixed;
+  left: 16px;
+  bottom: 16px;
+  z-index: 60;
+  width: min(340px, calc(100vw - 32px));
+  padding: 22px 18px 16px;
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, #141c30 0%, #0b1222 100%);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+  color: #f4f0e6;
+  transform: translateX(calc(-100% - 28px));
+  opacity: 0;
+  transition: transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1), opacity 0.45s ease;
+  pointer-events: none;
+}
+
+.connect-card.is-visible {
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.connect-notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  width: 72px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateX(-50%);
+}
+
+.connect-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #d5dbe8;
+  cursor: pointer;
+}
+
+.connect-close svg { width: 12px; height: 12px; }
+
+.connect-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.connect-fb,
+.connect-chat {
+  display: grid;
+  place-items: center;
+}
+
+.connect-fb {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #1877f2;
+  color: white;
+}
+
+.connect-fb svg { width: 22px; height: 22px; }
+
+.connect-chat {
+  width: 28px;
+  height: 28px;
+  color: #9eb0c8;
+}
+
+.connect-chat svg { width: 22px; height: 22px; }
+
+.connect-kicker {
+  margin: 0 0 10px;
+  color: #8ea0b8;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.connect-title {
+  margin: 0;
+  font-family: "Russo One", sans-serif;
+  font-size: 1.85rem;
+  line-height: 1.05;
+  letter-spacing: 0.01em;
+  color: #f6f1e4;
+}
+
+.connect-copy {
+  margin: 12px 0 16px;
+  color: #9aabbf;
+  font-size: 15px;
+  line-height: 1.45;
+}
+
+.connect-cta {
+  width: 100%;
+  min-height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 12px;
+  background: #1877f2;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.connect-cta svg { width: 16px; height: 16px; }
+
+@media (max-width: 640px) {
+  .connect-card { left: 12px; bottom: 12px; }
+  .connect-title { font-size: 1.55rem; }
+}
