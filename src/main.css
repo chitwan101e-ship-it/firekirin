@@ -807,6 +807,47 @@ body:not(.is-home) .site-header {
   text-underline-offset: 3px;
 }
 
+.article-table-wrap {
+  overflow-x: auto;
+  margin-top: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+}
+
+.article-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 520px;
+}
+
+.article-table th,
+.article-table td {
+  padding: 12px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  line-height: 1.55;
+}
+
+.article-table th {
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #f4f0e6;
+}
+
+.article-table td { color: var(--muted); }
+
+.article-table tr:last-child td { border-bottom: 0; }
+
+.article-table caption {
+  caption-side: bottom;
+  padding: 10px 14px 12px;
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
 .game-detail { display: grid; gap: 22px; }
 
 .detail-hero {
@@ -819,6 +860,126 @@ body:not(.is-home) .site-header {
 .detail-hero .art { height: 320px; border-radius: 24px; }
 
 .plain-form { display: grid; gap: 12px; margin-top: 18px; }
+
+.social-corners { margin: 8px 0 42px; }
+
+.social-corners h2 {
+  margin: 0 0 22px;
+  font-family: Outfit, sans-serif;
+  font-size: clamp(2rem, 4vw, 2.7rem);
+  font-weight: 650;
+  letter-spacing: -0.03em;
+  text-align: left;
+}
+
+.social-defs { position: absolute; width: 0; height: 0; }
+
+.social-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+a.social-card {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.social-card {
+  padding: 22px 20px 24px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, #221c33 0%, #161222 100%);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+}
+
+.social-card h3 {
+  margin: 16px 0 8px;
+  font-family: Outfit, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.social-card p {
+  margin: 0;
+  color: #b7b3c9;
+  font-size: 1.02rem;
+}
+
+.social-status {
+  margin-top: 22px !important;
+  color: #8b8798 !important;
+  font-size: 0.98rem !important;
+}
+
+.social-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: white;
+}
+
+.social-icon svg { width: 26px; height: 26px; }
+
+.social-icon-facebook { background: #1877f2; }
+
+.social-icon-telegram { background: #2aabee; }
+
+.social-icon-messenger { background: #0084ff; }
+
+.social-icon-instagram {
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: transparent;
+}
+
+.social-icon-instagram svg { width: 46px; height: 46px; }
+
+.contact-aside,
+.coming-soon-card { padding: 28px; }
+
+.contact-aside .section-title,
+.contact-aside .section-copy { text-align: left; margin-left: 0; }
+
+.coming-soon-card {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, rgba(32, 32, 36, 0.92), rgba(14, 14, 16, 0.94));
+}
+
+.coming-soon-flag {
+  display: inline-flex;
+  margin: 0 0 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  color: #c8c4bc;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.plain-form.is-disabled {
+  margin-top: 0;
+  opacity: 0.48;
+  filter: grayscale(1);
+}
+
+.plain-form.is-disabled input,
+.plain-form.is-disabled textarea,
+.plain-form.is-disabled button {
+  cursor: not-allowed;
+}
+
+.plain-form.is-disabled .form-note {
+  color: #9a9a9a;
+  text-align: left;
+}
 
 .reveal { opacity: 0; transform: translateY(18px); animation: none; }
 .reveal.in { opacity: 1; transform: none; transition: opacity 0.6s ease, transform 0.6s ease; }
@@ -900,6 +1061,14 @@ body:not(.is-home) .site-header {
   .lede { margin-top: 8px; font-size: 0.92rem; }
   .hero-actions { margin-top: 12px; }
   .status-chip { display: none; }
+}
+
+@media (max-width: 980px) {
+  .social-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 760px) {
+  .social-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {

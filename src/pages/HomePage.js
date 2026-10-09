@@ -18,8 +18,8 @@ export const HomePage = {
           <h1 class="hero-title"><span>Fire Kirin</span><span>Online Sweepstakes</span></h1>
           <p class="lede">A lobby built for fish tables, slots, and keno. Same account in the browser or on your phone, with the creature holding the floor.</p>
           <div class="hero-actions">
-            <a class="btn btn-gold" href="/account" data-route="/account">Join Now</a>
-            <a class="btn btn-ghost" href="/games" data-route="/games">Play FK</a>
+            <a class="btn btn-gold" href="/contact" data-route="/contact">Join Now</a>
+            <a class="btn btn-ghost" href="https://play.firekirin.xyz/web_game/firekirin777_pc/index.html" target="_blank" rel="noopener noreferrer">Play FK</a>
           </div>
           <p class="status-chip"><span class="pulse"></span> Fish tables, slots, and keno in one lobby</p>
         </div>

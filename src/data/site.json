@@ -1,25 +1,25 @@
 {
   "siteName": "Fire Kirin",
   "assets": {
-    "logo": "/firekirin.com/wp-content/uploads/2023/12/Fire-Kirin-PNG-Logo-transparent.png",
-    "favicon": "/firekirin.com/wp-content/uploads/2025/06/cropped-Fire-Kirin-PNG-Logo-transparent-1-32x32.png",
-    "fishBanner": "/firekirin.com/wp-content/uploads/2024/06/Play-Fire-Kirin-Fish-Games.jpg",
-    "slotBanner": "/firekirin.com/wp-content/uploads/2024/06/Play-Fire-Kirin-Slots.jpg",
-    "lobby": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Fish-and-Slot-Games.jpg",
-    "androidIcon": "/firekirin.com/wp-content/uploads/2024/06/Download-Fire-Kirin-App-for-Android.png",
-    "iosIcon": "/firekirin.com/wp-content/uploads/2024/06/Download-Fire-Kirin-App-for-Apple-iOS.png",
-    "androidBanner": "/firekirin.com/wp-content/uploads/2024/06/firekirin-download-for-android.jpg",
-    "iosBanner": "/firekirin.com/wp-content/uploads/2024/06/firekirin-download-for-IOS.jpg"
+    "logo": "/media/Fire-Kirin-PNG-Logo-transparent.png",
+    "favicon": "/media/cropped-Fire-Kirin-PNG-Logo-transparent-1-32x32.png",
+    "fishBanner": "/media/Play-Fire-Kirin-Fish-Games.jpg",
+    "slotBanner": "/media/Play-Fire-Kirin-Slots.jpg",
+    "lobby": "/media/Fire-Kirin-Fish-and-Slot-Games.jpg",
+    "androidIcon": "/media/Download-Fire-Kirin-App-for-Android.png",
+    "iosIcon": "/media/Download-Fire-Kirin-App-for-Apple-iOS.png",
+    "androidBanner": "/media/firekirin-download-for-android.jpg",
+    "iosBanner": "/media/firekirin-download-for-IOS.jpg"
   },
   "stills": [
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Jackpot.jpg", "alt": "Fire Kirin jackpot logo with the gold kirin" },
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Fish-and-Slot-Games.jpg", "alt": "Fire Kirin fish games and slot games collage" },
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Slot-Games.jpg", "alt": "Fire Kirin slot game cabinet art" },
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/fire-kirin-app.jpg", "alt": "Fire Kirin mobile app on a phone" },
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Halloween-image.jpg", "alt": "Fire Kirin Halloween slot artwork" },
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Thanksgiving-Day-image.jpg", "alt": "Fire Kirin Thanksgiving slot artwork" },
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/firekirin-download-for-android.jpg", "alt": "Download the Fire Kirin app for Android" },
-    { "src": "/firekirin.com/wp-content/uploads/2024/06/firekirin-download-for-IOS.jpg", "alt": "Download the Fire Kirin app for iOS" }
+    { "src": "/media/Fire-Kirin-Jackpot.jpg", "alt": "Fire Kirin jackpot logo with the gold kirin" },
+    { "src": "/media/Fire-Kirin-Fish-and-Slot-Games.jpg", "alt": "Fire Kirin fish games and slot games collage" },
+    { "src": "/media/Fire-Kirin-Slot-Games.jpg", "alt": "Fire Kirin slot game cabinet art" },
+    { "src": "/media/fire-kirin-app.jpg", "alt": "Fire Kirin mobile app on a phone" },
+    { "src": "/media/Fire-Kirin-Halloween-image.jpg", "alt": "Fire Kirin Halloween slot artwork" },
+    { "src": "/media/Fire-Kirin-Thanksgiving-Day-image.jpg", "alt": "Fire Kirin Thanksgiving slot artwork" },
+    { "src": "/media/firekirin-download-for-android.jpg", "alt": "Download the Fire Kirin app for Android" },
+    { "src": "/media/firekirin-download-for-IOS.jpg", "alt": "Download the Fire Kirin app for iOS" }
   ],
   "navigation": [
     { "label": "Back to Home Page", "path": "/", "accent": true },
@@ -57,7 +57,7 @@
       "category": "fish",
       "art": "fish",
       "hue": 196,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Ocean-Monsters-Fish-Game.jpg",
+      "image": "/media/Ocean-Monsters-Fish-Game.jpg",
       "blurb": "A deep-water fish table where rare creatures break the surface and light the whole screen."
     },
     {
@@ -66,8 +66,8 @@
       "category": "fish",
       "art": "crest",
       "hue": 16,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Fish-Game-Arc-Of-Templar.jpg",
-      "shots": ["/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Arc-Of-Templar-Gameplay-image-min.jpg"],
+      "image": "/media/Fire-Kirin-Fish-Game-Arc-Of-Templar.jpg",
+      "shots": ["/media/Fire-Kirin-Arc-Of-Templar-Gameplay-image-min.jpg"],
       "blurb": "Crusader banners and relic bonuses on a fish table with a relentless bonus tide."
     },
     {
@@ -76,8 +76,8 @@
       "category": "fish",
       "art": "tentacle",
       "hue": 322,
-      "image": "/firekirin.com/wp-content/uploads/2023/12/Baby-Octopus-Fish-Game.jpg",
-      "shots": ["/firekirin.com/wp-content/uploads/2023/12/baby-octopus3.jpg"],
+      "image": "/media/Baby-Octopus-Fish-Game.jpg",
+      "shots": ["/media/baby-octopus3.jpg"],
       "blurb": "A playful reef table with ink bursts, tiny schools, and a softer color story."
     },
     {
@@ -86,8 +86,8 @@
       "category": "fish",
       "art": "crab",
       "hue": 8,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Fish-Game-Crab-King-2-1024x731.jpg",
-      "shots": ["/firekirin.com/wp-content/uploads/2025/06/fire-kirin-login-crab-king-2.jpg"],
+      "image": "/media/Fire-Kirin-Fish-Game-Crab-King-2-1024x731.jpg",
+      "shots": ["/media/fire-kirin-login-crab-king-2.jpg"],
       "blurb": "Armored bosses and claw strikes — the louder sequel to the reef classic."
     },
     {
@@ -96,8 +96,8 @@
       "category": "fish",
       "art": "crest",
       "hue": 46,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Fish-Game-Fire-Kirin-2.jpg",
-      "shots": ["/firekirin.com/wp-content/uploads/2025/06/fire-kirin-2-login-1024x516.jpg"],
+      "image": "/media/Fish-Game-Fire-Kirin-2.jpg",
+      "shots": ["/media/fire-kirin-2-login-1024x516.jpg"],
       "blurb": "The namesake table: gold scales, flame trails, and the biggest silhouettes in the lobby."
     },
     {
@@ -106,8 +106,8 @@
       "category": "fish",
       "art": "eagle",
       "hue": 204,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Eagle-Eyes-Fish-Game.jpg",
-      "shots": ["/firekirin.com/wp-content/uploads/2025/06/eagle-eyes-fire-kirin-online-1024x543.jpg"],
+      "image": "/media/Eagle-Eyes-Fish-Game.jpg",
+      "shots": ["/media/eagle-eyes-fire-kirin-online-1024x543.jpg"],
       "blurb": "High-contrast targets and fast lock-ons for players who like precision over spray."
     },
     {
@@ -116,7 +116,7 @@
       "category": "slot",
       "art": "slot",
       "hue": 356,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/4TH-OF-JULY-PLAY-FK-FIRE-KIRIN-SLOTS-GAME.png",
+      "image": "/media/4TH-OF-JULY-PLAY-FK-FIRE-KIRIN-SLOTS-GAME.png",
       "blurb": "Fireworks reels, star wilds, and a summer-night pace built for short sessions."
     },
     {
@@ -125,8 +125,8 @@
       "category": "slot",
       "art": "lamp",
       "hue": 274,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/Fire-Kirin-Slot-Game-Aladdins-Lamp.jpg",
-      "shots": ["/firekirin.com/wp-content/uploads/2025/06/Play-FK-Online-Slots-Aladdins-Lamp.png"],
+      "image": "/media/Fire-Kirin-Slot-Game-Aladdins-Lamp.jpg",
+      "shots": ["/media/Play-FK-Online-Slots-Aladdins-Lamp.png"],
       "blurb": "Lamp scatters, palace wilds, and a wish round that stacks the longer it runs."
     },
     {
@@ -135,8 +135,8 @@
       "category": "slot",
       "art": "slot",
       "hue": 32,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/Fire-Kirin-Bufallo-777-Slots-Game.jpg",
-      "shots": ["/firekirin.com/wp-content/uploads/2025/06/Play-Fire-Kirin-Online-Slots-Buffalo-777.png"],
+      "image": "/media/Fire-Kirin-Bufallo-777-Slots-Game.jpg",
+      "shots": ["/media/Play-Fire-Kirin-Online-Slots-Buffalo-777.png"],
       "blurb": "Prairie dust, stampeding stacks, and classic 7s on a wide desert reel."
     },
     {
@@ -145,7 +145,7 @@
       "category": "slot",
       "art": "slot",
       "hue": 328,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Pink-Perfume-Gameplay-imge.jpg",
+      "image": "/media/Fire-Kirin-Pink-Perfume-Gameplay-imge.jpg",
       "blurb": "Bottle symbols and soft light, with a sweeter bonus rhythm than the fish tables."
     },
     {
@@ -154,7 +154,7 @@
       "category": "slot",
       "art": "crest",
       "hue": 42,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Olympus-image.jpg",
+      "image": "/media/Fire-Kirin-Olympus-image.jpg",
       "blurb": "Columns, laurel wilds, and a climb that opens once the reels catch a streak."
     },
     {
@@ -163,7 +163,7 @@
       "category": "slot",
       "art": "fish",
       "hue": 142,
-      "image": "/firekirin.com/wp-content/uploads/2024/06/Fire-Kirin-Fantasy-Forest-Gameplay-image.jpg",
+      "image": "/media/Fire-Kirin-Fantasy-Forest-Gameplay-image.jpg",
       "blurb": "Glowing paths and creature wilds for a calmer slot between the louder tables."
     },
     {
@@ -172,7 +172,7 @@
       "category": "fish",
       "art": "fish",
       "hue": 48,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/golden-toad-fire-kirin-fishing-online-1024x524.jpg",
+      "image": "/media/golden-toad-fire-kirin-fishing-online-1024x524.jpg",
       "blurb": "A gold toad on a reef table, with the school packed tight around the boss."
     },
     {
@@ -181,7 +181,7 @@
       "category": "fish",
       "art": "fish",
       "hue": 330,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/circus-circus-fire-kirin-777-1024x572.jpg",
+      "image": "/media/circus-circus-fire-kirin-777-1024x572.jpg",
       "blurb": "A circus-tent fish table with bright targets and a louder crowd."
     },
     {
@@ -190,8 +190,8 @@
       "category": "slot",
       "art": "slot",
       "hue": 12,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/Kirin-Link-Fire-Kirin-China-Town-Slots.png",
-      "shots": ["/firekirin.com/wp-content/uploads/2025/06/Kirin-Link-Fire-Kirin-China-Town-Slots-Game.png"],
+      "image": "/media/Kirin-Link-Fire-Kirin-China-Town-Slots.png",
+      "shots": ["/media/Kirin-Link-Fire-Kirin-China-Town-Slots-Game.png"],
       "blurb": "Lanterns and street-market reels from the Kirin Link cabinet."
     },
     {
@@ -200,8 +200,8 @@
       "category": "slot",
       "art": "slot",
       "hue": 200,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/Play-Fire-Kirin-Caribbean-Pirates-Slots.png",
-      "shots": ["/firekirin.com/wp-content/uploads/2025/06/Play-Fire-Kirin-Slots-Caribbean-Pirates.png"],
+      "image": "/media/Play-Fire-Kirin-Caribbean-Pirates-Slots.png",
+      "shots": ["/media/Play-Fire-Kirin-Slots-Caribbean-Pirates.png"],
       "blurb": "A pirate reel with ships, coins, and a wide ocean backdrop."
     },
     {
@@ -210,7 +210,7 @@
       "category": "slot",
       "art": "slot",
       "hue": 140,
-      "image": "/firekirin.com/wp-content/uploads/2025/06/black-jack-21-fire-kirin-xyz-login-1024x569.jpg",
+      "image": "/media/black-jack-21-fire-kirin-xyz-login-1024x569.jpg",
       "blurb": "A 21 table sitting beside the fish games in the same lobby."
     }
   ]

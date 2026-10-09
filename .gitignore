@@ -6,5 +6,8 @@ dist/
 .env.local
 .vscode/
 .idea/
+SEO_COMPILATION.txt
+WEBSITE_ANALYSIS.md
+CLEANUP_SUMMARY.md
 
 

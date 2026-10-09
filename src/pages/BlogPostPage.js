@@ -34,7 +34,7 @@ export const BlogPostPage = {
             ${postBodyHtml(post)}
           </div>
           <div class="inline-actions">
-            <a class="btn btn-gold" href="/account" data-route="/account">Join Now</a>
+            <a class="btn btn-gold" href="/contact" data-route="/contact">Join Now</a>
             <a class="btn btn-ghost" href="/games" data-route="/games">Fire Kirin game list</a>
           </div>
         </article>

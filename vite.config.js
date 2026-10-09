@@ -55,8 +55,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': resolve(__dirname, './src'),
-      '@data': resolve(__dirname, './src/data'),
-      '@assets': resolve(__dirname, './firekirin.com/wp-content')
+      '@data': resolve(__dirname, './src/data')
     }
   }
 });

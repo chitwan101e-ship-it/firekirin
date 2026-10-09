@@ -21,11 +21,11 @@ export const ConnectCard = {
       </div>
       <p class="connect-kicker">Fire Kirin · Let's connect</p>
       <p class="connect-title">Follow the stories.<br>Say hello.</p>
-      <p class="connect-copy">Find us on Facebook or send a message when our page goes live.</p>
-      <button class="connect-cta" type="button">
-        <span>Facebook · Coming soon</span>
+      <p class="connect-copy">Find us on Facebook, or send a note from the contact page.</p>
+      <a class="connect-cta" href="https://www.facebook.com/share/1KJhLtD1S6/" target="_blank" rel="noopener noreferrer">
+        <span>Open Facebook</span>
         <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h10M11 6l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+      </a>
     `;
 
     const dismiss = () => {

@@ -38,7 +38,7 @@ const pages = {
   },
   '/contact': {
     title: 'Contact Fire Kirin',
-    description: 'Contact Fire Kirin for lobby help, or open the vendor desk if you run fish tables.',
+    description: 'Fire Kirin social channels and the message form are coming soon. Vendors can still open the vendor desk.',
     image: siteData.assets.lobby,
   },
   '/account': {

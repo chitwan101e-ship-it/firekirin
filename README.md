@@ -51,8 +51,7 @@ npm run preview
 │   ├── App.js         # Main app component
 │   └── index.html      # HTML template
 ├── public/            # Static assets
-│   └── firekirin.com/
-│       └── wp-content/ # Images and media
+│   └── media/         # Images used by the site
 ├── package.json
 ├── vite.config.js
 ├── tailwind.config.js
@@ -77,7 +76,7 @@ npm run preview
 
 ## 📝 Notes
 
-- Images are served from `public/firekirin.com/wp-content/`
+- Images are served from `public/media/`
 - All content is stored in JSON format in `src/data/`
 - Routing is handled client-side with vanilla JavaScript
 - The app uses Tailwind's dark theme with custom primary colors
