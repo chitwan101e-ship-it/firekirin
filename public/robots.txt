@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://firekirin.games/sitemap.xml
+Sitemap: https://www.firekirin.games/sitemap.xml

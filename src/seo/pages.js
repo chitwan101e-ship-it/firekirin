@@ -1,7 +1,7 @@
 import siteData from '../data/site.json';
 import { getPost, posts, postSnapshotHtml } from '../data/posts.js';
 
-export const SITE_URL = 'https://firekirin.games';
+export const SITE_URL = 'https://www.firekirin.games';
 
 const HOME_DESCRIPTION = 'Play Fire Kirin games online. Fish tables and slots, including Ocean Monster, Arc of Templar, Baby Octopus, and Buffalo 777, in one sweepstakes lobby.';
 
@@ -243,6 +243,16 @@ function missingSeo() {
     robots: 'noindex, follow',
     jsonLd: null,
   };
+}
+
+export function sitemapXml() {
+  const urls = indexablePages().map((seo) => {
+    const loc = `${SITE_URL}${seo.path === '/' ? '/' : seo.path}`;
+    const post = seo.path.startsWith('/blog/') ? getPost(seo.path.slice('/blog/'.length)) : null;
+    const lastmod = post?.date || '2026-10-08';
+    return `  <url><loc>${loc}</loc><lastmod>${lastmod}</lastmod></url>`;
+  }).join('\n');
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;
 }
 
 export function indexablePages() {

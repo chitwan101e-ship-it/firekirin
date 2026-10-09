@@ -1,7 +1,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from 'fs';
 import { defineConfig } from 'vite';
 import { resolve } from 'path';
-import { SITE_URL, indexablePages, snapshotHtml } from './src/seo/pages.js';
+import { SITE_URL, indexablePages, sitemapXml, snapshotHtml } from './src/seo/pages.js';
 
 function escapeAttr(value) {
   return value.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
@@ -36,6 +36,9 @@ function seoHtmlPlugin() {
         mkdirSync(dir, { recursive: true });
         writeFileSync(resolve(dir, 'index.html'), html);
       });
+      const sitemap = sitemapXml();
+      writeFileSync(resolve(dist, 'sitemap.xml'), sitemap);
+      writeFileSync(resolve(__dirname, 'public/sitemap.xml'), sitemap);
     },
   };
 }

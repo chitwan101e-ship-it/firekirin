@@ -12,7 +12,12 @@ export const App = {
     vignette.id = 'vignette';
     document.body.prepend(vignette);
     document.body.prepend(canvas);
-    mountScene(canvas);
+    const startScene = () => mountScene(canvas);
+    if (window.requestIdleCallback) {
+      window.requestIdleCallback(startScene, { timeout: 1500 });
+    } else {
+      window.setTimeout(startScene, 300);
+    }
 
     container.innerHTML = '';
     const shell = document.createElement('div');
