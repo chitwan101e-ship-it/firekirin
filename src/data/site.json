@@ -22,7 +22,7 @@
     { "src": "/media/firekirin-download-for-IOS.jpg", "alt": "Download the Fire Kirin app for iOS" }
   ],
   "navigation": [
-    { "label": "Back to Home Page", "path": "/", "accent": true },
+    { "label": "Home", "path": "/", "accent": true },
     { "label": "About", "path": "/about" },
     { "label": "Game List", "path": "/games" },
     {
