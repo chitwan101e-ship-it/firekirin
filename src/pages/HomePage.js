@@ -3,6 +3,7 @@ import { gameCard, bindReveal } from '../components/gameCard.js';
 
 let stopReveal = () => {};
 let carouselTimer = 0;
+let onHotResize = () => {};
 
 const names = siteData.games.map((game) => game.title).join('<span>◆</span>');
 
@@ -46,12 +47,17 @@ export const HomePage = {
               <p class="eyebrow">Check out some of the hottest Fire Kirin games</p>
               <h2 class="section-title">Hottest tables tonight</h2>
             </div>
-            <div class="row-controls">
-              <button class="icon-btn" type="button" data-prev aria-label="Previous slide">←</button>
-              <button class="icon-btn" type="button" data-next aria-label="Next slide">→</button>
-            </div>
           </div>
-          <div class="hot-row">${hot.map(gameCard).join('')}</div>
+          <div class="hot-row" tabindex="0">${hot.map(gameCard).join('')}</div>
+          <div class="hot-pager">
+            <button class="icon-btn" type="button" data-prev aria-label="Previous games">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5 9 12l5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+            <div class="hot-dots" data-dots role="group" aria-label="Game pages"></div>
+            <button class="icon-btn" type="button" data-next aria-label="Next games">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9.5 6.5 15 12l-5.5 5.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </button>
+          </div>
         </div>
       </section>
 
@@ -116,19 +122,63 @@ export const HomePage = {
     stopReveal = bindReveal(container);
 
     const scroller = container.querySelector('.hot-row');
-    const advance = (direction) => {
-      const amount = Math.max(280, scroller.clientWidth * 0.8) * direction;
-      const atEnd = scroller.scrollLeft + scroller.clientWidth >= scroller.scrollWidth - 12;
-      if (direction > 0 && atEnd) scroller.scrollTo({ left: 0, behavior: 'smooth' });
-      else scroller.scrollBy({ left: amount, behavior: 'smooth' });
+    const dots = container.querySelector('[data-dots]');
+    const pager = container.querySelector('.hot-pager');
+    let dotCount = 0;
+
+    const metrics = () => {
+      const card = scroller.querySelector('.game-card');
+      const gap = parseFloat(getComputedStyle(scroller).columnGap) || 16;
+      const stride = (card?.getBoundingClientRect().width || 280) + gap;
+      const max = Math.max(0, scroller.scrollWidth - scroller.clientWidth);
+      const count = max < 8 ? 1 : Math.round(max / stride) + 1;
+      const index = max < 8 ? 0 : Math.min(count - 1, Math.round(scroller.scrollLeft / stride));
+      return { stride, max, count, index };
     };
+
+    const paintDots = () => {
+      const { count, index } = metrics();
+      if (count !== dotCount) {
+        dotCount = count;
+        dots.innerHTML = Array.from({ length: count }, (_, i) => (
+          `<button type="button" aria-label="Show game page ${i + 1}"></button>`
+        )).join('');
+      }
+      pager.hidden = count < 2;
+      [...dots.children].forEach((dot, i) => {
+        const on = i === index;
+        dot.classList.toggle('is-current', on);
+        if (on) dot.setAttribute('aria-current', 'true');
+        else dot.removeAttribute('aria-current');
+      });
+    };
+
+    const advance = (direction) => {
+      const { stride, max, index, count } = metrics();
+      const next = direction > 0 && index >= count - 1 ? 0 : index + direction;
+      const left = next < 0 ? max : Math.min(max, next * stride);
+      scroller.scrollTo({ left, behavior: 'smooth' });
+    };
+
     container.querySelector('[data-next]').addEventListener('click', () => advance(1));
     container.querySelector('[data-prev]').addEventListener('click', () => advance(-1));
+    dots.addEventListener('click', (event) => {
+      const dot = event.target.closest('button');
+      if (!dot) return;
+      const index = [...dots.children].indexOf(dot);
+      scroller.scrollTo({ left: index * metrics().stride, behavior: 'smooth' });
+    });
+    scroller.addEventListener('scroll', paintDots, { passive: true });
+    onHotResize = paintDots;
+    window.addEventListener('resize', onHotResize);
+    paintDots();
     carouselTimer = window.setInterval(() => advance(1), 4200);
   },
 
   destroy() {
     window.clearInterval(carouselTimer);
+    window.removeEventListener('resize', onHotResize);
+    onHotResize = () => {};
     stopReveal();
     stopReveal = () => {};
   },

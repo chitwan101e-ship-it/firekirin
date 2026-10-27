@@ -12,8 +12,8 @@ const pages = {
     image: siteData.assets.lobby,
   },
   '/about': {
-    title: 'About Fire Kirin Fish Games and Slots',
-    description: 'Fire Kirin is a sweepstakes lobby for fish tables, slots, and keno. See how the games are organized and how to play from home.',
+    title: 'About Fire Kirin: Fish Tables, Slots, and Keno',
+    description: 'Fire Kirin is a multiplayer arcade fishing game from East Asia. Shared tables, cannons, fish games, slots, and keno on the web and on the phone. 18+.',
     image: siteData.assets.lobby,
   },
   '/games': {
@@ -33,7 +33,7 @@ const pages = {
   },
   '/blog': {
     title: 'Fire Kirin Blog: Games, Download, and XYZ Guides',
-    description: 'Fire Kirin game guides for 2026: how to play, what Fire Kirin XYZ means, browser play on a Chromebook, and the Android and iPhone download path.',
+    description: 'Fire Kirin game guides for 2026: how to play, lobby bonuses, what Fire Kirin XYZ means, Chromebook play, and the Android and iPhone path.',
     image: siteData.assets.fishBanner,
   },
   '/contact': {
@@ -43,7 +43,7 @@ const pages = {
   },
   '/account': {
     title: 'Create a Free Fire Kirin Account',
-    description: 'Request a free Fire Kirin player account for fish games, slots, and the same profile on Android and iOS.',
+    description: 'Fire Kirin player signup for fish games, slots, and the phone lobby is coming soon.',
     image: siteData.assets.lobby,
   },
   '/vendor': {

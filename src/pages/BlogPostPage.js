@@ -1,4 +1,7 @@
 import { getPost, postBodyHtml } from '../data/posts.js';
+import { DownloadTrivia } from '../components/DownloadTrivia.js';
+
+const DOWNLOAD_SLUG = 'how-to-download-fire-kirin-android-iphone';
 
 export const BlogPostPage = {
   render(container, slug) {
@@ -29,7 +32,7 @@ export const BlogPostPage = {
             <h1>${post.title}</h1>
             <p class="lede">${post.description}</p>
           </header>
-          <img class="article-hero" src="${post.image}" alt="${post.imageAlt}">
+          <img class="article-hero${post.imageContain ? ' is-contain' : ''}" src="${post.image}" alt="${post.imageAlt}">
           <div class="article-body">
             ${postBodyHtml(post)}
           </div>
@@ -39,5 +42,11 @@ export const BlogPostPage = {
           </div>
         </article>
       </div>`;
+
+    if (slug === DOWNLOAD_SLUG) DownloadTrivia.open();
+  },
+
+  destroy() {
+    DownloadTrivia.close();
   },
 };

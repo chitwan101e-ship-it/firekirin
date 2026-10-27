@@ -1,105 +1,214 @@
 export const posts = [
   {
-    slug: 'how-to-download-fire-kirin-android-iphone',
-    title: 'How to Download Fire Kirin on Android and iPhone (2026 Guide)',
-    description: 'A 2026 Fire Kirin download guide for Android, iPhone, and iPad. Open the fish tables and slots in the browser, then keep one account.',
-    date: '2026-10-08',
-    image: '/media/fire-kirin-app.jpg',
-    imageAlt: 'Fire Kirin game on a phone',
-    kicker: 'Fire Kirin download',
-    excerpt: 'Fire Kirin is not a Play Store or App Store listing. On Android, iPhone, and iPad the lobby opens in the browser, with one account for every screen.',
+    slug: 'fire-kirin-bonus-types',
+    title: 'Fire Kirin Bonuses: Lucky Bags, Cash Back, Jackpots, and Lucky Weekends',
+    description: 'Four Fire Kirin bonus screens, explained: the lucky-bag pick, cash back, the mini-to-grand jackpot board, and the Lucky Weekends wheel.',
+    date: '2026-10-26',
+    image: '/media/bonuses/fire-kirin-lucky-weekends-wheel.jpeg',
+    imageAlt: 'Fire Kirin Lucky Weekends wheel with a Spin button over the game lobby',
+    imageContain: true,
+    kicker: 'Fire Kirin bonuses',
+    excerpt: 'The Fire Kirin lobby keeps more than fish tables and slots. These four screens are the lucky-bag pick, cash back, the jackpot board, and the Lucky Weekends wheel.',
     sections: [
       {
         paragraphs: [
-          'A Fire Kirin download search in 2026 is usually a search for the fish tables and slots, then a way to keep playing on a phone. Fire Kirin is a sweepstakes lobby. Ocean Monster, Crab King 2, Fire Kirin 2, Buffalo 777, and the rest of the floor sit in one place. On [firekirin.games](/) that floor opens in Chrome or Safari, so you can look through the [Fire Kirin game list](/games) before you install anything.',
-          'Google Play and the App Store do not carry this kind of sweepstakes fish game the way they carry ordinary apps. The lobby is not missing. It is just not a store listing. A useful download guide starts on the screen you already have. A file from a text, a comment, or a social post is how cloned apps travel.',
+          'Fire Kirin bonuses show up as their own screens on the lobby, separate from a normal shot on a fish table or a spin on a slot. Four of them are easy to tell apart once you have seen them: a lucky-bag pick, a cash-back meter, a four-tier jackpot board, and a Lucky Weekends wheel. They sit on the same floor as [Ocean Monster](/fish-games/ocean-monster), [Buffalo 777](/slots/buffalo-777), and the rest of the [game list](/games).',
+          'Fire Kirin is a sweepstakes lobby. Play it on [firekirin.games](/). The [games guide](/blog/fire-kirin-games-guide) covers how a round is organized once you are back on a table.',
+        ],
+      },
+      {
+        heading: 'Lucky bags',
+        paragraphs: [
+          'The lucky-bag screen is a pick. A host in a gold dress stands beside a grid of gold pouches on a red stage. Closed bags show a red seal. Opened bags show a number. In this shot the opened pouches read 0.03, 0.07, 0.13, 0.50, and 2.00, with other bags still sealed.',
+          'You reveal pouches on this screen. The amounts on the open bags are what that pick showed. Another visit can open a different set. A sealed bag stays sealed until the screen opens it.',
+        ],
+        figure: {
+          src: '/media/bonuses/fire-kirin-lucky-bags.jpeg',
+          alt: 'Fire Kirin lucky bag bonus with opened money pouches showing small prize amounts',
+          caption: 'Lucky bags. Opened pouches in this shot show 0.03, 0.07, 0.13, 0.50, and 2.00.',
+        },
+      },
+      {
+        heading: 'Cash back',
+        paragraphs: [
+          'Cash back uses the same host, standing to the right of a gold pig in a red hat. Cash Back sits above the balance, and Collect sits under it. In this shot the balance reads 0.00.',
+          'Collect is the button for whatever the meter has built up. The balance here reads 0.00. The screen does not print a percentage or a schedule. Read the number on your own account.',
+        ],
+        figure: {
+          src: '/media/bonuses/fire-kirin-cash-back.jpeg',
+          alt: 'Fire Kirin cash back screen with a gold pig, a zero balance, and a Collect button',
+          caption: 'Cash back. The balance in this shot reads 0.00, with Collect underneath.',
+        },
+      },
+      {
+        heading: 'The jackpot board',
+        paragraphs: [
+          'The jackpot screen is four meters beside the record: Grand, Major, Minor, and Mini. On this board they read Grand $1,600.95, Major $518.33, Minor $110.45, and Mini $22.63. Those meters move.',
+          'The record lists a place, a masked name, a time, the tier that hit, and a bonus amount. This shot is mostly Mini, with one Minor in the list. A banner under the record reads “You are not in the list.” The record is a history of hits already logged. Opening the screen leaves that banner as it is until a hit of yours is on the board.',
+        ],
+        figure: {
+          src: '/media/bonuses/fire-kirin-jackpot-board.jpeg',
+          alt: 'Fire Kirin jackpot board with Grand, Major, Minor, and Mini meters beside the record of recent hits',
+          caption: 'Jackpot board. Grand, Major, Minor, and Mini beside the record of recent hits.',
+        },
+      },
+      {
+        heading: 'Lucky Weekends',
+        paragraphs: [
+          'Lucky Weekends is a wheel laid over the lobby. The title sits at the upper right, Spin sits in the gold hub, and the slices mix amounts with Good Luck. On this wheel the amount slices include 0.10, 0.13, 0.25, 0.30, 0.50, 0.70, 1.50, 2.00, 3.00, 5.00, and 7.50. Good Luck is its own slice.',
+          'Behind the wheel, the lobby tabs are still there: All, Fav, Fish, Slot, and Other. The wheel is a layer on the same Fire Kirin floor. Close it and you are back on [fish games](/fish-games) and [slots](/slots). Spin when the wheel is open. The result is the slice where it stops.',
+        ],
+        figure: {
+          src: '/media/bonuses/fire-kirin-lucky-weekends-wheel.jpeg',
+          alt: 'Fire Kirin Lucky Weekends prize wheel with amount slices, Good Luck slices, and a Spin button',
+          caption: 'Lucky Weekends wheel over the Fire Kirin lobby tabs.',
+        },
+      },
+      {
+        heading: 'How the four screens differ',
+        paragraphs: [
+          'Each screen answers a different moment. Bags are a pick. Cash back is a meter you can collect. The jackpot board is shared tiers plus a record of hits. Lucky Weekends is a wheel the lobby names in the title. Learn the screen in front of you, then go back to the table.',
+        ],
+        table: {
+          caption: 'Four Fire Kirin bonus screens and what each one is showing.',
+          headers: ['Screen', 'What you see', 'What it is'],
+          rows: [
+            ['Lucky bags', 'A grid of pouches, some still sealed', 'A pick that reveals a number on the bag you open'],
+            ['Cash back', 'A gold pig, a balance, and Collect', 'A meter for an amount you can collect when it has built up'],
+            ['Jackpot board', 'Mini, Minor, Major, Grand, and a record', 'Shared meters plus a list of recent hits'],
+            ['Lucky Weekends', 'A wheel over the lobby tabs', 'A weekend spin with amount slices and Good Luck'],
+          ],
+        },
+      },
+      {
+        heading: 'Open them on this floor',
+        paragraphs: [
+          'These screens are on [firekirin.games](/). A message that offers to unlock bags, cash back, or a jackpot is the same problem the [Fire Kirin XYZ guide](/blog/what-is-fire-kirin-xyz) already flags. The art can be copied onto another domain.',
+          'If you want a player profile, use [Join Now](/account). The fish tables and the slots are the session. The bonus screens are part of that floor when the lobby opens them.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What bonus screens does Fire Kirin use?',
+        a: 'Four that show up as their own screens are the lucky-bag pick, cash back with a Collect button, a jackpot board with Mini, Minor, Major, and Grand, and the Lucky Weekends wheel.',
+      },
+      {
+        q: 'Is the cash-back number a fixed percent?',
+        a: 'The cash-back screen shows a balance and a Collect button. The shot in this guide reads 0.00. It does not print a rate. Use the number on your own screen.',
+      },
+      {
+        q: 'Are the jackpot amounts on this page current?',
+        a: 'No. Mini, Minor, Major, and Grand above are from this board. The meters move.',
+      },
+      {
+        q: 'What is Lucky Weekends?',
+        a: 'A wheel over the Fire Kirin lobby. The hub says Spin. Slices show amounts or Good Luck. The fish and slot tabs stay behind it.',
+      },
+      {
+        q: 'Can someone message me these bonuses?',
+        a: 'Open them on firekirin.games. A link, a file, or a payment that claims to unlock bags, cash back, or a jackpot is not this lobby.',
+      },
+    ],
+  },
+  {
+    slug: 'how-to-download-fire-kirin-android-iphone',
+    title: 'How to Download Fire Kirin on Android and iPhone (2026 Guide)',
+    description: 'Install Fire Kirin on Android and iPhone in 2026, or skip the file and play the fish games and slots in the browser.',
+    date: '2026-10-26',
+    image: '/media/fire-kirin-app.jpg',
+    imageAlt: 'Fire Kirin game on a phone',
+    kicker: 'Fire Kirin download',
+    excerpt: 'Fire Kirin is not a Play Store or App Store listing. Install it from the Fire Kirin page on Android or iPhone, or open the web lobby and play with no file.',
+    sections: [
+      {
+        paragraphs: [
+          'A Fire Kirin download in 2026 is a choice between the phone app and the web lobby. Google Play and the App Store do not list this sweepstakes fish game, so the app comes from the Fire Kirin install page. If you would rather skip the file, the games already run in the browser. Fish tables such as [Ocean Monster](/fish-games/ocean-monster) and slots such as [Buffalo 777](/slots/buffalo-777) are on the same floor either way. The [game list](/games) is the catalog, and the [games guide](/blog/fire-kirin-games-guide) covers how a round is organized.',
+          'Use the [Fire Kirin install page](https://start.firekirin.xyz:8580/) for Android and iPhone. Use the [Fire Kirin web lobby](http://play.firekirin.in/web_mobile/firekirin/) when you want to play with no download. Open those addresses yourself. A file forwarded in a chat is not the same install.',
         ],
       },
       {
         heading: 'Why Fire Kirin is not on the app stores',
         paragraphs: [
-          'Sweepstakes fish games are distributed by the operator, not shelved next to weather apps. Stores set their own rules for this kind of play, so Fire Kirin does not show up as a normal install button. That is why other write-ups jump to an APK on Android or a profile link on iPhone. Those are workarounds people describe. They are not a requirement for the lobby on this site.',
-          'This site does not publish a sideload file. The Fire Kirin game you can open today is the browser lobby. If you want a player profile, use [Join Now](/account) on firekirin.games. Do not treat a stranger’s download link, a “latest version” repost, or a page that only resembles this one as the same product. The [Fire Kirin XYZ guide](/blog/what-is-fire-kirin-xyz) explains why lookalike portals use a similar name.',
+          'Fire Kirin is distributed by the operator as a sweepstakes lobby. Stores set their own rules for that kind of play, so there is no ordinary install button next to a weather app. Android gets an APK from the install page. iPhone gets a profile you trust in Settings. The web lobby is the path that needs neither.',
         ],
       },
       {
-        heading: 'Play in the browser before you install anything',
+        heading: 'Play in the browser with no download',
         paragraphs: [
-          'Open [firekirin.games](/) yourself. Type the address, or use a bookmark you saved after you checked the domain. Walk the game list, open a fish table such as [Ocean Monster](/fish-games/ocean-monster) or a slot such as [Buffalo 777](/slots/buffalo-777), and see the cabinet before you create an account.',
-          'Browser play is the Fire Kirin download without the file: fish games, slots, and keno under one roof. It works on Android, iPhone, iPad, Windows, Mac, and a Chromebook. Chrome and Safari are enough. You are not waiting on a store review, and you are not depending on a certificate that can expire. The [Chromebook guide](/blog/play-fire-kirin-on-chromebook) is the same lobby on a laptop that has no Play Store.',
+          'The web lobby opens in Chrome or Safari. No APK, no configuration profile, and no store listing. Android, iPhone, iPad, Windows, Mac, and a Chromebook can all use it. The [Chromebook guide](/blog/play-fire-kirin-on-chromebook) is that same idea on a laptop.',
+          'The install page also has a Play Now button. That button opens the web game in the browser you are already using. Bookmark [the web lobby](http://play.firekirin.in/web_mobile/firekirin/) after it loads, then sign in with your player ID.',
         ],
-        list: [
-          'Type firekirin.games. Do not follow a shortened link from a message.',
-          'Open the game list and pick one table or one slot.',
-          'Use Join Now on this site if you want a player account.',
-          'Stay in the browser until you know the lobby is the one you meant.',
+        steps: [
+          'Open the web lobby in Chrome or Safari.',
+          'Sign in with your Fire Kirin player ID and password.',
+          'Pick a fish table or a slot. The [game list](/games) names the cabinets.',
+          'Need an account first? Request one with [Join Now](/account) on this site.',
         ],
       },
       {
-        heading: 'What you can play without a download',
+        heading: 'Download Fire Kirin on Android',
         paragraphs: [
-          'A Fire Kirin session is usually a fish table first. Targets cross the scene, larger creatures deserve more of your attention, and you can leave the round when you are done. Slots sit beside that when you want reels instead of a cannon. Keno is there when you want a board. The [games guide](/blog/fire-kirin-games-guide) walks through how a round is organized.',
-          'The names are how you know you are on this floor. Fish games include [Ocean Monster](/fish-games/ocean-monster), [Arc of Templar](/fish-games/arc-of-templar), [Baby Octopus](/fish-games/baby-octopus), [Crab King 2](/fish-games/crab-king-2), [Eagle Eyes](/fish-games/eagle-eyes), [Golden Toad](/fish-games/golden-toad), [Circus](/fish-games/circus), and [Fire Kirin 2](/fish-games/fire-kirin-2). Slots include [Buffalo 777](/slots/buffalo-777), [Aladdin\'s Lamp](/slots/aladdins-lamp), [4th of July](/slots/4th-of-july), [Olympus](/slots/olympus), [Fantasy Forest](/slots/fantasy-forest), [China Town](/slots/china-town), and [Caribbean Pirates](/slots/caribbean-pirates). Nothing in that catalog requires a separate launcher just to look around.',
+          'Android installs the APK from the [Fire Kirin install page](https://start.firekirin.xyz:8580/). Open that page in Chrome. Chat apps such as WeChat and QQ block the file, and the page will ask you to leave them and use the phone browser.',
+          'The Android download button saves the Fire Kirin APK. Current Android asks for permission one browser at a time. Allow Chrome to install unknown apps, then open the file and confirm. When the icon is on the home screen, log in with the same player ID you use on the web lobby.',
+        ],
+        steps: [
+          'In Chrome, open the Fire Kirin install page.',
+          'Tap the Android download button and wait for the APK to finish.',
+          'If Android asks, allow Chrome to install unknown apps. The switch is under Settings, Apps, Chrome.',
+          'Open the downloaded file and install Fire Kirin.',
+          'Launch the app and sign in with your player ID and password.',
         ],
       },
       {
-        heading: 'Fire Kirin on Android',
+        heading: 'Download Fire Kirin on iPhone and iPad',
         paragraphs: [
-          'Android players often expect an APK, because Fire Kirin is not a Play Store listing. Guides elsewhere start by telling you to allow installs from unknown sources, then to open a file of some stated version and size. That setting trusts whatever file you chose. It does not check that the file is the Fire Kirin game. A download that promises free coins, a cracked lobby, or a mirror of “the latest APK” is the file to delete.',
-          'The order that matches this site is simpler. Learn the lobby in Chrome on the phone. Request an account from the [account page](/account). Keep that login for the browser. If a phone build is ever offered for your account, it should come from firekirin.games, not from a repost. Until then, Chrome already runs the Fire Kirin games. An older phone can still open the lobby. A smaller screen makes the tables tighter. It does not mean you need a different product.',
-          'Fish tables such as [Ocean Monster](/fish-games/ocean-monster) and [Crab King 2](/fish-games/crab-king-2) should feel like the same Fire Kirin games you opened on a computer, not a second library with a second login.',
+          'iPhone and iPad use Safari. Open the [install page](https://start.firekirin.xyz:8580/) there and tap an iOS install button. One of those buttons downloads a Fire Kirin configuration profile. iOS then asks you to finish the install in Settings.',
+          'The screen you need is Settings, General, then VPN & Device Management. Older iOS calls that same screen Profiles & Device Management. Tap Fire Kirin and press Install. Go back to the home screen, open the app, and sign in.',
+          'iPad follows the same Safari steps. There is no separate tablet download. If you move between an iPhone and an iPad, keep one player ID.',
+          'Apple revokes these certificates from time to time. When that happens the icon can open and then close. Go back to the install page in Safari and install again. Until the new profile is trusted, the [web lobby](http://play.firekirin.in/web_mobile/firekirin/) still runs the games.',
         ],
-        list: [
-          'Use Chrome and open firekirin.games.',
-          'Do not turn on unknown sources for a file you cannot trace to this domain.',
-          'Ignore APK mirrors, version reposts, and coin generators.',
-          'Join from this site instead of a signup form on another domain.',
-          'Keep one account for the phone browser and any later build tied to this lobby.',
-        ],
-      },
-      {
-        heading: 'Fire Kirin on iPhone and iPad',
-        paragraphs: [
-          'iPhone play starts in Safari. The lobby loads like any other site. Sign in with the account you requested here and open the same fish tables and slots. You do not need a store listing to do that.',
-          'Other guides describe an enterprise-signed app: a link or a QR code, an install, then a trust step in device settings. Those profiles are also how lookalike apps get onto a phone. Apple revokes enterprise certificates often enough that an icon can sit on the home screen and refuse to open. If that happens to an app you did not get from this domain, do not hunt for a replacement profile in a chat. Come back to Safari and [firekirin.games](/).',
-          'iPad uses the same path as iPhone. There is no separate tablet download. Landscape gives fish tables more room. A slot such as [Aladdin\'s Lamp](/slots/aladdins-lamp) is readable in portrait. If you switch between an iPhone and an iPad, use the same account from this site.',
+        steps: [
+          'Open the install page in Safari, not inside another app.',
+          'Tap the iOS install button and allow the profile download.',
+          'Open Settings, General, VPN & Device Management.',
+          'Tap Fire Kirin and press Install.',
+          'Open Fire Kirin from the home screen and sign in.',
         ],
       },
       {
-        heading: 'One account on every screen',
+        heading: 'One player ID on the app and the web lobby',
         paragraphs: [
-          'The useful part of a download, when people ask for one, is continuity. The account you request with [Join Now](/account) is the profile for this lobby. The browser on a phone, the browser on a computer, and a later install should not each demand a new signup. If a page asks you to create a second player just to “activate” a file, you are not on this floor.',
-          'Log in only on firekirin.games. A form that copies the gold kirin and sits on another domain is collecting the password, not opening [Ocean Monster](/fish-games/ocean-monster). Create the bookmark yourself after the address looks right.',
+          'The install and the browser are two doors into the same lobby. The player ID you request with [Join Now](/account) is the login for both. You do not create a second player to “activate” the APK or the iPhone profile.',
+          'Type the password on the install page, in the app, or on the web lobby. A login form that only copies the gold kirin and sits on some other address is not this download.',
         ],
       },
       {
         heading: 'Mistakes that waste the install',
         paragraphs: [
-          'Most bad Fire Kirin downloads fail in the same few ways. The file is old, the domain is wrong, or the pitch is a pile of free coins. None of those open the live lobby. Reload [firekirin.games](/) instead of reinstalling a file from months ago.',
+          'Most failed Fire Kirin downloads come from the wrong file or a skipped trust step. Use the install page again instead of an APK that has been sitting in Downloads.',
         ],
         list: [
-          'APK sites that are not firekirin.games.',
-          'Login pages that copy the art and change the domain.',
-          'Messages that sell credits or send a “new download link.”',
-          'Old files left in Downloads. Open the live lobby instead.',
-          'Unknown sources turned on for a file a comment recommended.',
-          'A developer profile you cannot tie back to this site.',
-          'A home-screen icon that crashes, followed by a random reinstall. Open the browser lobby first.',
+          'APK sites other than the Fire Kirin install page, including files that promise free coins.',
+          'The install page opened inside WeChat, QQ, or a similar chat app.',
+          'An old APK installed over a newer one.',
+          'An iPhone profile left untrusted, so the icon never opens.',
+          'A crashed iPhone icon followed by a profile someone sent in a message. Use the install page in Safari.',
         ],
       },
       {
         heading: 'Which path to use',
         paragraphs: [
-          'Use the browser on every device this site supports. A file install is not required to play the Fire Kirin games, browse the [fish games](/fish-games), or open the [slots](/slots).',
+          'The web lobby is the fastest open. The install page is the phone app, for Android and for iPhone. Both reach the same fish games and [slots](/slots).',
         ],
         table: {
-          caption: 'The Fire Kirin game on this site is the browser lobby.',
-          headers: ['Device', 'How you open it', 'Install a file?'],
+          caption: 'Fire Kirin on a phone, a tablet, or in the browser.',
+          headers: ['Device', 'Where you start', 'Install a file?'],
           rows: [
-            ['Android phone', 'Chrome at firekirin.games', 'No. This site does not publish an APK.'],
-            ['iPhone', 'Safari at firekirin.games', 'No. Skip profile links that did not come from this domain.'],
-            ['iPad', 'Same Safari lobby as iPhone', 'No separate tablet download.'],
-            ['Computer or Chromebook', 'Chrome or another current browser', 'No store listing and no APK.'],
+            ['Android', 'Install page, Android download button', 'Yes. The APK from that page.'],
+            ['iPhone', 'Install page in Safari, then trust the profile', 'Yes. The Fire Kirin profile.'],
+            ['iPad', 'Same Safari steps as iPhone', 'Same profile. No separate tablet app.'],
+            ['Browser or computer', 'Fire Kirin web lobby', 'No.'],
           ],
         },
       },
@@ -107,35 +216,35 @@ export const posts = [
     faqs: [
       {
         q: 'Where is the official Fire Kirin download?',
-        a: 'Play in the browser at firekirin.games. This lobby does not publish a third-party APK. Join from the account page if you want a player profile.',
+        a: 'Android and iPhone install from the [Fire Kirin install page](https://start.firekirin.xyz:8580/). To play with no file, open the [web lobby](http://play.firekirin.in/web_mobile/firekirin/).',
       },
       {
         q: 'Why is Fire Kirin missing from Google Play and the App Store?',
-        a: 'It is distributed as a sweepstakes lobby rather than as a standard store app. The browser on this site is how you open the games without a store listing.',
+        a: 'It is distributed as a sweepstakes lobby. The operator hosts the Android APK and the iPhone profile on the install page, and the games also run in the browser.',
       },
       {
         q: 'Can I play Fire Kirin without installing an app?',
-        a: 'Yes. Fish games, slots, and keno are in the browser lobby. That is the fastest way in on Android, iPhone, and iPad.',
+        a: 'Yes. Open the web lobby in Chrome or Safari. Fish games, slots, and keno are there with no APK and no iPhone profile.',
       },
       {
-        q: 'Do I need an account before I can look at the games?',
-        a: 'You can open the lobby and read the game list on firekirin.games first. Use Join Now when you want a player profile for the tables.',
+        q: 'Do I need an account before I download?',
+        a: 'You sign in with a Fire Kirin player ID. Request one with Join Now on this site if you do not have one yet, then use that login in the app and in the web lobby.',
       },
       {
         q: 'Do Android and iPhone share one Fire Kirin account?',
-        a: 'Yes. The account you request on firekirin.games is the profile meant to follow you from the browser to a phone.',
+        a: 'Yes. One player ID covers the Android app, the iPhone app, and the web lobby.',
       },
       {
         q: 'Can I play Fire Kirin on an iPad?',
-        a: 'Yes. iPad uses the same Safari lobby as iPhone. You do not need a different download.',
+        a: 'Yes. iPad uses the same Safari install as iPhone. You can also skip the profile and use the web lobby.',
       },
       {
-        q: 'What if an iPhone app icon opens and then closes?',
-        a: 'Come back to Safari and firekirin.games. Do not install a replacement profile from a message. If the app did not come from this domain, stay in the browser.',
+        q: 'What if the iPhone app opens and then closes?',
+        a: 'The certificate was revoked. Open the install page in Safari and install again, then trust Fire Kirin under Settings, General, VPN & Device Management. The web lobby still works while you do that.',
       },
       {
         q: 'Is a Fire Kirin APK from a random site safe?',
-        a: 'No. This site does not hand out an APK. Files that promise free coins or a cracked lobby are the ones to avoid.',
+        a: 'No. Download the APK from the Fire Kirin install page. Files that promise free coins or a cracked lobby are the ones to delete.',
       },
     ],
   },
@@ -392,58 +501,58 @@ export const posts = [
   {
     slug: 'play-fire-kirin-on-chromebook',
     title: 'Play Fire Kirin on a Chromebook or Any Browser',
-    description: 'Open Fire Kirin games on a Chromebook in Chrome. No APK required. Use firekirin.games for fish tables, slots, and the same Fire Kirin game lobby.',
-    date: '2026-09-26',
+    description: 'Open Fire Kirin in Chrome on a Chromebook. No APK. The web lobby has the fish tables and slots, and the phone install is a separate page.',
+    date: '2026-10-26',
     image: '/media/firekirin-download-for-android.jpg',
     imageAlt: 'Fire Kirin lobby artwork for browser and Android play',
     kicker: 'Chromebook and browser',
-    excerpt: 'A Chromebook can open the Fire Kirin game in Chrome. You do not need an APK or a store install to reach the fish tables and slots.',
+    excerpt: 'A Chromebook opens Fire Kirin in Chrome. Use the web lobby for the fish tables and slots. The phone app is a separate install.',
     sections: [
       {
         paragraphs: [
-          'Chromebooks are a common way people try to open Fire Kirin XYZ, because a lot of sideload steps simply do not apply. Chrome is already the operating system. The practical Fire Kirin download on that machine is a bookmark: [firekirin.games](/). From there the Fire Kirin game lobby loads in the browser, with the same fish tables and slots listed on the site.',
-          'That path is also the right one on Windows, Mac, and a phone browser. If the screen can run Chrome or Safari, it can open the lobby. You are not blocked because a laptop has no Play Store.',
+          'On a Chromebook, Chrome is the way into Fire Kirin. You do not install an APK and you do not need the Play Store. Open the [Fire Kirin web lobby](http://play.firekirin.in/web_mobile/firekirin/) and the fish tables and slots load in the tab. The same address works in Chrome on Windows, Mac, and an Android phone, and in Safari on iPhone.',
+          'This site’s [game list](/games) is the catalog for those cabinets: [Ocean Monster](/fish-games/ocean-monster), [Buffalo 777](/slots/buffalo-777), and the rest. The web lobby is where you play them.',
         ],
       },
       {
-        heading: 'How to open Fire Kirin games on a Chromebook',
-        list: [
-          'Open Chrome and go to firekirin.games. Type the address; do not follow a shortened link.',
-          'Use the game list to open a fish table or a slot.',
-          'Sign in only after you have requested an account on this site.',
-          'Keep the tab. A refresh returns you to the same Fire Kirin game floor.',
+        heading: 'How to open Fire Kirin in Chrome',
+        steps: [
+          'Open Chrome and go to the Fire Kirin web lobby. Type the address yourself.',
+          'Sign in with your player ID. Request one with [Join Now](/account) if you do not have it yet.',
+          'Open a fish table or a slot. Full-screen the tab when you want the tables larger.',
+          'Keep the tab. A refresh brings the same lobby back.',
         ],
         paragraphs: [
-          'Full-screen the tab if you want the tables larger. Landscape on a tablet-style Chromebook is comfortable for fish games, where targets cross a wide scene. Slots such as [Buffalo 777](/slots/buffalo-777) are readable in a normal window. Nothing in that setup asks you to enable Linux installs or load an APK.',
-        ],
-      },
-      {
-        heading: 'Why the browser beats a file install',
-        paragraphs: [
-          'A Chromebook will not run a typical Android APK without extra steps, and those steps are where fake Fire Kirin downloads hide. Staying in Chrome removes that decision. You also avoid portal pages that put a port number in the address bar and hope you will not notice the domain.',
-          'Updates happen when you reload firekirin.games. You are not stuck on an old Fire Kirin game build saved in Downloads. If a tab looks wrong — different logo, different address, a demand for a card before you even see [Ocean Monster](/fish-games/ocean-monster) — close it and open the site again yourself.',
+          'Landscape on a tablet-style Chromebook gives fish games more room. A slot such as [Buffalo 777](/slots/buffalo-777) is readable in a normal window. Nothing in that setup asks you to turn on Linux or load an APK.',
         ],
       },
       {
-        heading: 'Phone later, lobby now',
+        heading: 'Why Chrome is the Chromebook install',
         paragraphs: [
-          'Some players start on a Chromebook and later want the Fire Kirin game on a phone. The account is the bridge. Request it with [Join Now](/account), play the browser lobby now, and read the [Android and iPhone guide](/blog/how-to-download-fire-kirin-android-iphone) before you install anything. The games do not change between those screens: [fish games](/fish-games) and [slots](/slots) stay the catalog.',
-          'Play for the session in front of you. The Fire Kirin game on a Chromebook is the lobby, open in Chrome, on firekirin.games.',
+          'A Chromebook does not run a normal Android APK without extra steps, and those steps are where fake Fire Kirin files show up. Staying in Chrome skips that. Reload the [web lobby](http://play.firekirin.in/web_mobile/firekirin/) when you want the current build. You are not stuck on an old file in Downloads.',
+          'If a tab shows a different logo, asks for a card before you see [Ocean Monster](/fish-games/ocean-monster), or is not the web lobby address, close it and open the lobby again yourself.',
+        ],
+      },
+      {
+        heading: 'Phone later, Chrome now',
+        paragraphs: [
+          'The phone app is a different door. Android and iPhone install from the [Fire Kirin install page](https://start.firekirin.xyz:8580/). The steps are in the [Android and iPhone guide](/blog/how-to-download-fire-kirin-android-iphone). Use the same player ID there that you use in Chrome.',
+          'The games do not change between those screens. [Fish games](/fish-games) and [slots](/slots) stay the catalog. On the Chromebook, play the session in the web lobby.',
         ],
       },
     ],
     faqs: [
       {
         q: 'Can I play Fire Kirin on a Chromebook?',
-        a: 'Yes. Open firekirin.games in Chrome. The Fire Kirin game lobby runs in the browser, so you do not install an APK.',
+        a: 'Yes. Open the Fire Kirin web lobby in Chrome. You do not install an APK.',
       },
       {
-        q: 'Does Fire Kirin XYZ need a special browser?',
-        a: 'No. Chrome on a Chromebook is enough. Safari and other current browsers can open the same lobby.',
+        q: 'Does Fire Kirin need a special browser?',
+        a: 'No. Chrome on a Chromebook is enough. Safari and other current browsers can open the same web lobby.',
       },
       {
         q: 'Will my Chromebook progress match a phone?',
-        a: 'Use the account you create on firekirin.games. That profile is what the lobby expects on the next screen.',
+        a: 'Use the same player ID in Chrome and in the phone app. Request that ID with Join Now on this site if you do not have one.',
       },
     ],
   },
@@ -459,8 +568,12 @@ function escapeHtml(value) {
 
 function inline(value) {
   return escapeHtml(value).replace(
-    /\[([^\]]+)\]\((\/[^)\s]*)\)/g,
-    '<a href="$2" data-route="$2">$1</a>',
+    /\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)/g,
+    (_, label, href) => (
+      href.startsWith('/')
+        ? `<a href="${href}" data-route="${href}">${label}</a>`
+        : `<a href="${href}" target="_blank" rel="noopener noreferrer">${label}</a>`
+    ),
   );
 }
 
@@ -468,17 +581,23 @@ export function postBodyHtml(post) {
   const sections = post.sections.map((section) => {
     const heading = section.heading ? `<h2>${escapeHtml(section.heading)}</h2>` : '';
     const paragraphs = (section.paragraphs || []).map((paragraph) => `<p>${inline(paragraph)}</p>`).join('');
+    const figure = section.figure
+      ? `<figure class="article-figure"><img src="${escapeHtml(section.figure.src)}" alt="${escapeHtml(section.figure.alt)}">${section.figure.caption ? `<figcaption>${inline(section.figure.caption)}</figcaption>` : ''}</figure>`
+      : '';
     const list = section.list
       ? `<ul>${section.list.map((item) => `<li>${inline(item)}</li>`).join('')}</ul>`
+      : '';
+    const steps = section.steps
+      ? `<ol>${section.steps.map((item) => `<li>${inline(item)}</li>`).join('')}</ol>`
       : '';
     const table = section.table
       ? `<div class="article-table-wrap"><table class="article-table">${section.table.caption ? `<caption>${inline(section.table.caption)}</caption>` : ''}<thead><tr>${section.table.headers.map((cell) => `<th>${inline(cell)}</th>`).join('')}</tr></thead><tbody>${section.table.rows.map((row) => `<tr>${row.map((cell) => `<td>${inline(cell)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`
       : '';
-    return `<section>${heading}${paragraphs}${list}${table}</section>`;
+    return `<section>${heading}${paragraphs}${figure}${list}${steps}${table}</section>`;
   }).join('');
 
   const faqs = post.faqs?.length
-    ? `<section class="article-faq"><h2>Fire Kirin questions</h2>${post.faqs.map((faq) => `<h3>${escapeHtml(faq.q)}</h3><p>${escapeHtml(faq.a)}</p>`).join('')}</section>`
+    ? `<section class="article-faq"><h2>Fire Kirin questions</h2>${post.faqs.map((faq) => `<h3>${escapeHtml(faq.q)}</h3><p>${inline(faq.a)}</p>`).join('')}</section>`
     : '';
 
   return `${sections}${faqs}`;
