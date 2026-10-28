@@ -16,8 +16,7 @@ function itemMarkup(item) {
         </div>
       </div>`;
   }
-  const accent = item.accent ? ' accent' : '';
-  return `<a class="${accent.trim()}" href="${item.path}" data-route="${item.path}" data-nav>${item.label}</a>`;
+  return `<a href="${item.path}" data-route="${item.path}" data-nav>${item.label}</a>`;
 }
 
 export const Header = {
